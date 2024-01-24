@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.controllers.MainMenuController">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="500.0">
+            <image>
+                <Image url="@../../../images/background.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="one_player_btn" layoutX="180.0" layoutY="158.0" mnemonicParsing="false" onAction="#onePlayerGame" prefWidth="110.0" styleClass="btn-menu-style" text="1 player">
+            <font>
+                <Font size="20.0" />
+            </font></Button>
+        <Button layoutX="180.0" layoutY="250.0" mnemonicParsing="false" onAction="#twoPlayerGame" prefWidth="110.0" styleClass="btn-menu-style" text="2 players">
+            <font>
+                <Font size="20.0" />
+            </font></Button>
+        <Label layoutX="124.0" layoutY="34.0" styleClass="menu-title" text="Tic Tac Toe">
+            <font>
+                <Font size="45.0" />
+            </font></Label>
+        <Button fx:id="exit_btn" layoutX="180.0" layoutY="336.0" mnemonicParsing="false" onAction="#exitBtnClick" prefHeight="39.0" prefWidth="110.0" styleClass="btn-menu-style" text="exit">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

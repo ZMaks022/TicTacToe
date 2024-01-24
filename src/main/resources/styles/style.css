@@ -1,0 +1,60 @@
+
+.btn-grid-style {
+    -fx-background-color: transparent;
+    -fx-border-width: 1;
+    -fx-border-color: black;
+    -fx-font-size: 46px;
+}
+
+.menu-title {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #010101;
+    -fx-padding: 10px;
+    -fx-background-color: #e0e0e0;
+
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+}
+
+.btn-menu-style {
+    -fx-padding: 10px 20px;
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-family: "Arial";
+    -fx-font-size: 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 5, 0, 0, 0);
+    -fx-pref-width: 140px;
+    -fx-pref-height: 50px;
+}
+
+.menu-question {
+    -fx-font-size: 28px;
+    -fx-background-color: transparent;
+}
+
+.btn-menu-style:hover {
+    -fx-background-color: #2980b9;
+    -fx-cursor: hand;
+}
+
+.info-bar-normal {
+    -fx-text-fill: black;
+}
+
+.info-bar-error {
+    -fx-text-fill: red;
+}
+
+.info-bar-win {
+    -fx-text-fill: blue;
+    -fx-font-size: 26px;
+}
+
+.info-bar-lose {
+    -fx-text-fill: red;
+    -fx-font-size: 26px;
+}
+
