@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.controllers.MultiplayerGameController">
+
+
+    <children>
+        <GridPane fx:id="grid_field" layoutX="75.0" layoutY="75.0" prefHeight="350.0" prefWidth="350.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <Button id="grid_pane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.rowIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#btnClick" styleClass="btn-grid-style" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+        <Label layoutX="164.0" layoutY="14.0" text="One player mode">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" layoutY="439.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="61.0" prefWidth="500.0">
+            <children>
+                <Label fx:id="info_bar" alignment="CENTER" styleClass="info-bar-normal" text="Player One step">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <Line fx:id="TOP_HORIZONTAL" endX="420.0" layoutY="140.0" startX="80.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="MIDDLE_HORIZONTAL" endX="420.0" layoutY="250.0" startX="80.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="BOTTOM_HORIZONTAL" endX="420.0" layoutY="365.0" startX="80.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="LEFT_VERTICAL" layoutX="133.0" layoutY="80.0" startY="341.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="MIDDLE_VERTICAL" layoutX="248.0" layoutY="80.0" startY="341.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="RIGHT_VERTICAL" layoutX="364.0" layoutY="80.0" startY="341.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="LEFT_TO_RIGHT_DIAGONAL" endX="340.0" endY="340.0" layoutX="80.0" layoutY="80.0" strokeWidth="10.0" visible="false" />
+        <Line fx:id="RIGHT_TO_LEFT_DIAGONAL" endX="-346.0" endY="345.0" layoutX="425.0" layoutY="80.0" strokeWidth="10.0" visible="false" />
+        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="440.0" layoutY="14.0" onMouseClicked="#repeatClick" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/repeat.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#backToMenuClick" pickOnBounds="true">
+            <image>
+                <Image url="@../../../images/back.png" />
+            </image>
+        </ImageView>
+    </children>
+
+</AnchorPane>
