@@ -2,6 +2,7 @@ package com.example.tictactoe.game;
 
 import com.example.tictactoe.bots.Bot;
 import com.example.tictactoe.bots.EasyBot;
+import com.example.tictactoe.bots.MiddleBot;
 
 public class SingleGame extends Game {
     private Bot bot;
@@ -16,7 +17,7 @@ public class SingleGame extends Game {
         if (lvl == BotLevel.EASY_LEVEL)
             bot = new EasyBot();
         else if (lvl == BotLevel.MIDDLE_LEVEL)
-            bot = new EasyBot(); // redo
+            bot = new MiddleBot();
         else
             bot = new EasyBot();
 
