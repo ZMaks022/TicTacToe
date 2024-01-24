@@ -21,42 +21,42 @@ public class ChooseLevelController {
 
     @FXML
     void startEasyGame(ActionEvent event) {
-//        try {
-//            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictac/single-game-view.fxml"));
-//            Parent root = loader.load();
-//
-//            SingleGameController controller = loader.getController();
-//            controller.setEasyGame(); // need to rewrite
-//
-//            Scene scene = new Scene(root);
-//            scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
-//
-//            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//            stage.setScene(scene);
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictactoe/single-game-view.fxml"));
+            Parent root = loader.load();
+
+            SingleGameController controller = loader.getController();
+            controller.setEasyGame(); // need to rewrite
+
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
     void startMiddleGame(ActionEvent event) {
-//        try {
-//            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictac/single-game-view.fxml"));
-//            Parent root = loader.load();
-//
-//            SingleGameController controller = loader.getController();
-//            controller.setMiddleGame(); // need to rewrite
-//
-//            Scene scene = new Scene(root);
-//            scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
-//
-//            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//            stage.setScene(scene);
-//            stage.show();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictactoe/single-game-view.fxml"));
+            Parent root = loader.load();
+
+            SingleGameController controller = loader.getController();
+            controller.setMiddleGame(); // need to rewrite
+
+            Scene scene = new Scene(root);
+            scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
+
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @FXML
