@@ -30,7 +30,7 @@ public class MainMenuController {
     @FXML
     void onePlayerGame(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictac/choose-level-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictactoe/choose-level-view.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/styles/style.css")).toExternalForm());
@@ -46,7 +46,7 @@ public class MainMenuController {
     @FXML
     void twoPlayerGame(ActionEvent event) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictac/multiplayer-game-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/tictactoe/multiplayer-game-view.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             scene.getStylesheets().add(getClass().getResource("/styles/style.css").toExternalForm());
